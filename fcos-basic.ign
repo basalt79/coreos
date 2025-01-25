@@ -1,0 +1,39 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "sudo"
+        ],
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCul9kpm29PeDtMwM5f/GH1d+9Ipgod+drb6ZDGdW7+dQdIRoPHJi8Wi/02tBgsvuhnU6ZV1P62QLlJ/bOsZacx5aQiIKeBtVZqIeYwxJcKJGIVfBZ/uz7w7lhPth4vNP7R+KWt9P+SWb1W8VL4Gd3NByPrtm0uhyUwVvFrHqwvIWDetXxHhNrt7EVhvaWGFahoZk7N4E1z5ha3Xi7yaInUOPdRyQV1W9IBxggsl0AnEoq2oqAsd0hQiAYaP8lWVTkukP+zJY9+Nab3iARd25hguoOxI9wovdxR3CFy+eaSVGh1BtAbENDTYFdN2fSpzPr9mrf/SNA6AhC5dy66YfslfWNmZE8hTr+29TEeS+KONeRo9r2bZLL0yyekieV/UUZq9HEKWR/DYseuXy/LTCvmZyboO3T/DDEOh+L6e514cEb4MyHMGj/N2VT0tpv0RJbHghEchcvMIJW5T4PM0ofmJYcfNy70j5LSBBoUSHOGk+wIpnXSHB6qO16ouxGKeVwypfjb9sEAeLoJxXqiIu/y0kY9PtGQz16H1vkr1f8wBA+zCGoEcmqdy7MLiLyESd9hhHFs8vudvza6b8SvY+XFhStkuMK7+AUSti590pymvt7Og8nvTCq/yTaSD+9yfMmWOB5edALLTHCPktChxvbxuiAS/U3LuxmwdskM0IRCWw== core@boxes"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/zincati/config.d/99-custom-config.toml",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/1SOzaoDIQxG93mKoPtL7iwHfJIylLSmVlBnMJGhb19ctNDt93M4l3FENtENpPGtSMSADy4qkPo+Dgzo1GbhQK2zSXrNLNcqMbOJA/Afxt+ZW9zPDbwad5s7WlailciBL9KSPa81t2GiGPB/IYDvt4r1fP/xsD4E3gEAAP//kMi0laEAAAA="
+        },
+        "mode": 420
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": false,
+        "name": "zincati.service"
+      }
+    ]
+  }
+}
