@@ -15,6 +15,11 @@ systemd:
 
 storage:
   files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: ccc
+
     - path: /etc/zincati/config.d/99-custom-config.toml
       mode: 0644
       contents:

@@ -19,6 +19,14 @@
   "storage": {
     "files": [
       {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,ccc"
+        },
+        "mode": 420
+      },
+      {
         "path": "/etc/zincati/config.d/99-custom-config.toml",
         "contents": {
           "compression": "gzip",
